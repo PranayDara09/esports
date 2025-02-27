@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports-Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">&#10006;</button>
+        <ul>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><button id="darkModeToggle">Dark Mode</button></li>
+        </ul>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img class="logo" src="/img/TEC_Color_2.png" alt="logo">
+        <ul class="navlist">
+            <li><u>Home</u></li>
+            <li><u>Events</u></li>
+            <li><u id="profile-btn" onclick="toggleSidebar()">Profile</u></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="/sliderimg/bgi.webp" alt="Image #1">
+            <img class="slide" src="/sliderimg/ff.webp" alt="Image #2">
+            <img class="slide" src="/sliderimg/fifa.webp" alt="Image #3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

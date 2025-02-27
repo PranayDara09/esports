@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS';
+font-weight: 1rem;
+font-size: 1.2rem;
+}
+.navbar{
+background-color: hsla(0, 14%, 91%, 0.842);
+color: rgb(0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0.2rem;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+}
+.navlist li{
+    margin: 1rem;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+.navlist li :hover{
+    color: rgb(42, 58, 207);
+    cursor: pointer;
+}
+.slider {
+    position: relative;
+    width: 100vw;
+    margin: auto;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    z-index: 1;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.displaySlide {
+    display: block;
+    animation: fade 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.slides img{
+    width: 100vw;
+    object-fit: cover;
+}
+/*sidemenu*/
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Sidebar is hidden initially */
+    width: 250px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 12, 12);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+z-index: 2;}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: rgb(14, 12, 12);
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navlist li {
+    cursor: pointer;
+}
+.dark-mode {
+    background: #1a1a1a;
+    color: white;}
+.dark-mode .navbar {
+        background-color: #222;
+        color: white;}
+.dark-mode .sidebar{
+    background-color: #222;
+    color: white;
+}
+.dark-mode .sidebar ul li a {
+    color: white;}
+ .dark-mode .sidebar .close-btn {
+    color: white;}
